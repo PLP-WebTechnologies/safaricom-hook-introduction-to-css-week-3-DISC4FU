@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics - Inline, Internal, and External</title>
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS - Styling elements within the <style> tag */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Styling the card component */
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            width: 280px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Inline CSS: Changing text color using inline styles -->
+    <h1 style="color: darkred;">LEARN CHESS</h1>
+
+    <p>Chess improves focus.</p>
+    
+    <!-- Using internal CSS -->
+    <p class="highlight">chess is used for military strategy.</p>
+
+    <!-- Card Component styled using internal CSS -->
+    <div class="card">
+        <h2>CHESS</h2>
+        <p>Chess is fun and good for strategies.</p>
+    </div>
+
+    <a href="https://chess.com" class="external-link">Visit chess</a>
+
+</body>
+</html>
